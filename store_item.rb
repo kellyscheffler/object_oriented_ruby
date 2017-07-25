@@ -9,6 +9,10 @@
 # p "We have #{shoes3[:gender]} shoes in #{shoes3[:color]} size #{shoes3[:size]} for $ #{shoes3[:price]}"
 
 class Shoes
+
+  attr_reader :color, :price, :gender, :size
+  attr_writer :color, :price, :gender, :size
+
   def initialize(input_color, input_price, input_gender, input_size)
     @color = input_color
     @price = input_price
@@ -16,37 +20,37 @@ class Shoes
     @size = input_size
   end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def price
-    @price
-  end
+  # def price
+  #   @price
+  # end
 
-  def gender
-    @gender
-  end
+  # def gender
+  #   @gender
+  # end
 
-  def size
-    @size
-  end
+  # def size
+  #   @size
+  # end
 
-  def color=(new_color)
-    @color = new_color
-  end
+  # def color=(new_color)
+  #   @color = new_color
+  # end
 
-  def price=(new_price)
-    @price = new_price
-  end
+  # def price=(new_price)
+  #   @price = new_price
+  # end
 
-  def gender=(new_gender)
-    @gender = new_gender
-  end
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  # end
 
-  def size=(new_size)
-    @size = new_size
-  end
+  # def size=(new_size)
+  #   @size = new_size
+  # end
 
   def stock
     "We have #{color} #{gender} shoes in size #{size} available for $#{price}."
