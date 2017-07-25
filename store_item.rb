@@ -20,38 +20,6 @@ class Shoes
     @size = input_size
   end
 
-  # def color
-  #   @color
-  # end
-
-  # def price
-  #   @price
-  # end
-
-  # def gender
-  #   @gender
-  # end
-
-  # def size
-  #   @size
-  # end
-
-  # def color=(new_color)
-  #   @color = new_color
-  # end
-
-  # def price=(new_price)
-  #   @price = new_price
-  # end
-
-  # def gender=(new_gender)
-  #   @gender = new_gender
-  # end
-
-  # def size=(new_size)
-  #   @size = new_size
-  # end
-
   def stock
     "We have #{color} #{gender} shoes in size #{size} available for $#{price}."
   end
