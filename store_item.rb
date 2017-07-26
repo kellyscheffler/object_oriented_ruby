@@ -13,11 +13,11 @@ class Shoes
   attr_reader :color, :price, :gender, :size
   attr_writer :color, :price, :gender, :size
 
-  def initialize(input_color, input_price, input_gender, input_size)
-    @color = input_color
-    @price = input_price
-    @gender = input_gender
-    @size = input_size
+  def initialize(input_options)
+    @color = input_options[:color]
+    @price = input_options[:price]
+    @gender = input_options[:gender]
+    @size = input_options[:size]
   end
 
   def stock
@@ -27,12 +27,9 @@ end
 
 
 
-shoes1 = Shoes.new("red", 50, "womens", 8)
-shoes1.price = 30
-shoes1.color = "teal"
-shoes1.gender = "mens"
-shoes1.size = 10
+shoes1 = Shoes.new({:color => "red", :price => 50, :gender => "womens", :size => 8})
 p shoes1.price
 p shoes1.color
 p shoes1.size
 p shoes1.stock
+
